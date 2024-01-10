@@ -9,42 +9,44 @@
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Michelle's AI Poem Generator</h1>
+    </header>
 
-  <header>
-    <h1>Welcome to Michelle's AI Poem Generator</h1>
-  </header>
+    <main>
+      <form>
+        <input type="text"
+        placeholder="Enter a poem topic"
+        autofocus
+        required
+        autocomplete="off" 
+        class="instructions"
+        />
+        <input type="submit" class="submit-button"/>
+      </form>
 
-  <main>
-    <form>
-      <input type="text"
-      placeholder="Enter a poem topic"
-      autofocus
-      required
-      autocomplete="off" 
-      />
-      <input type="submit"/>
-    </form>
+      <div class="poem">
+        Two roads diverged in a yellow wood,
+        <br />
+        And sorry I could not travel both
+        <br />
+        And be one traveler, long I stood
+        <br />
+        And looked down one as far as I could
+        <br />
+        To where it bent in the undergrowth;
+      </div>
+    </main>
 
-    <div>
-      Two roads diverged in a yellow wood,
-      <br />
-      And sorry I could not travel both
-      <br />
-      And be one traveler, long I stood
-      <br />
-      And looked down one as far as I could
-      <br />
-      To where it bent in the undergrowth;
-    </div>
-  </main>
-
-  <footer>This AI project was coded by 
-    <a href="https://github.com/MichelleMullane" target="_blank">Michelle Mullane</a>
-     and is open-sourced on 
-    <a href="https://github.com/MichelleMullane/ai-poem-generator/tree/main" target="_blank">GitHub</a>
-     and is hosted on 
-    <a href="https://bespoke-bavarois-8e3b17.netlify.app/" target="_blank">Netflify</a>.
-  </footer>
+    <footer>This AI project was coded by 
+      <a href="https://github.com/MichelleMullane" target="_blank">Michelle Mullane</a>
+      and is open-sourced on 
+      <a href="https://github.com/MichelleMullane/ai-poem-generator/tree/main" target="_blank">GitHub</a>
+      and is hosted on 
+      <a href="https://bespoke-bavarois-8e3b17.netlify.app/" target="_blank">Netflify</a>.
+    </footer>
+  </div>
 
   <script src="src/index.js"></script>
 </body>

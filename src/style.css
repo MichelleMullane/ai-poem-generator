@@ -39,6 +39,10 @@ form {
   margin-bottom: 30px;
 }
 
+.user-prompt {
+  margin-left: 10px;
+}
+
 .instructions {
   padding: 16px;
   border: 1px solid rgba(255, 124, 0, 0.5);
@@ -72,6 +76,10 @@ input.instructions:focus {
   line-height: 2;
   border-left: 3px solid rgb(255, 124, 0);
   box-shadow: 0px 20px 60px rgba(255, 124, 0, 0.5);
+}
+
+.poem strong {
+  color: rgb(255, 124, 0);
 }
 
 footer {

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css"/>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <title>AI Poem Generator</title>
 </head>
 
@@ -17,26 +18,43 @@
 
     <main>
       <form id="poem-generator-form">
-        <input type="text"
-        placeholder="Enter a poem topic"
-        autofocus
-        required
-        autocomplete="off" 
-        class="instructions"
-        />
+        <div>
+          <span class="user-prompt">
+            Give me a poem about...
+          </span>
+          <input type="text"
+          placeholder="Enter a poem topic"
+          autofocus
+          required
+          autocomplete="off" 
+          class="instructions"
+          id="poem-topic"
+          />
+        </div>
+        <div>
+          <span class="user-prompt">
+            as if it were written by...
+          </span>
+          <input type="text"
+          placeholder="Enter a poet to mimic"
+          autofocus
+          required
+          autocomplete="off" 
+          class="instructions"
+          id="poet"
+          />
+        </div>
         <input type="submit" class="submit-button"/>
       </form>
 
       <div class="poem" id="poem">
-        Two roads diverged in a yellow wood,
+        Two roads diverged in a wood, and I—
         <br />
-        And sorry I could not travel both
+        I took the one less traveled by,
         <br />
-        And be one traveler, long I stood
+        And that has made all the difference.
         <br />
-        And looked down one as far as I could
-        <br />
-        To where it bent in the undergrowth;
+        <strong>Robert Frost</strong>
       </div>
     </main>
 
